@@ -49,6 +49,7 @@ int main(){
 	int maxElement=arr[0];
 	int minElement=arr[0];
 	int sum=0;
+	int countEven=0;
 	int n=sizeof(arr)/sizeof(arr[0]);
 	for(int i=0;i<n;i++){
 		sum+=arr[i];
@@ -58,10 +59,15 @@ int main(){
 		if(arr[i]<minElement){
 			minElement=arr[i];
 		}
+		if(arr[i]%2==0){
+			countEven++;
+		}
 	}
 	cout<<"Max Element is: "<<maxElement<<endl;
 	cout<<"Max Element is: "<<minElement<<endl;
 	cout<<"Sum Elements is: "<<sum<<endl;
-	cout<<"Avg of sum: "<<sum/n;
+	cout<<"Avg of sum: "<<sum/n<<endl;
+	cout<<"Total Even elements is: "<<countEven<<endl;
+	cout<<"Total odd elements is: "<<n-countEven;
 	return 0;
 }

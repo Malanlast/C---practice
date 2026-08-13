@@ -30,7 +30,7 @@ int main(){
 	cout<<arr[3];**/
 
 	//reverse array
-	int arr[]={10,20,30,40,50,60,70,80};
+	/**int arr[]={10,20,30,40,50,60,70,80};
 	int start=0;
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int end=n-1;
@@ -42,6 +42,26 @@ int main(){
 	cout<<"reverse array is: ";
 	for(int i=0;i<n;i++){
 		cout<<arr[i]<<" ";
+	}**/
+    
+	//Max Element or Min Element or Sum, avg
+	int arr[]={10,20,30,40,5,500,60,70,80,90,100};
+	int maxElement=arr[0];
+	int minElement=arr[0];
+	int sum=0;
+	int n=sizeof(arr)/sizeof(arr[0]);
+	for(int i=0;i<n;i++){
+		sum+=arr[i];
+		if(arr[i]>maxElement){
+			maxElement=arr[i];
+		}
+		if(arr[i]<minElement){
+			minElement=arr[i];
+		}
 	}
+	cout<<"Max Element is: "<<maxElement<<endl;
+	cout<<"Max Element is: "<<minElement<<endl;
+	cout<<"Sum Elements is: "<<sum<<endl;
+	cout<<"Avg of sum: "<<sum/n;
 	return 0;
 }

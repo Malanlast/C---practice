@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+
 	//target
 
 	/**int arr[4]={10,20,30,40};
@@ -30,6 +31,7 @@ int main(){
 	cout<<arr[3];**/
 
 	//reverse array
+
 	/**int arr[]={10,20,30,40,50,60,70,80};
 	int start=0;
 	int n=sizeof(arr)/sizeof(arr[0]);
@@ -44,8 +46,9 @@ int main(){
 		cout<<arr[i]<<" ";
 	}**/
     
-	//Max Element or Min Element or Sum, avg
-	int arr[]={10,20,30,40,5,500,60,70,80,90,100};
+	//Max Element or Min Element or Sum, avg, even, odd
+
+	/**int arr[]={10,20,30,40,5,500,60,70,80,90,100};
 	int maxElement=arr[0];
 	int minElement=arr[0];
 	int sum=0;
@@ -68,6 +71,20 @@ int main(){
 	cout<<"Sum Elements is: "<<sum<<endl;
 	cout<<"Avg of sum: "<<sum/n<<endl;
 	cout<<"Total Even elements is: "<<countEven<<endl;
-	cout<<"Total odd elements is: "<<n-countEven;
+	cout<<"Total odd elements is: "<<n-countEven;**/
+
+	//count frequency
+	/**int arr[]={10,50,42,7,52,23,54,5,5,5,23,10,50,42};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int count=0;
+	for(int i=0;i<n;i++){
+		for(int j=0;j<n;j++){
+			if(arr[i]==arr[j]){
+				count++; 
+			}
+		}
+		cout<<arr[i]<<" count is: "<<count<<endl;
+		count=0;
+	}**/
 	return 0;
 }

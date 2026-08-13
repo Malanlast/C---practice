@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 int main(){
 
@@ -86,5 +87,15 @@ int main(){
 		cout<<arr[i]<<" count is: "<<count<<endl;
 		count=0;
 	}**/
+
+	//Find Duplicate
+	int arr[]={1,9,2,5,4,2,3};//if short then this code work
+	int n=sizeof(arr)/sizeof(arr[0]);
+	sort(arr,arr+n); 
+	for(int i=0;i<n;i++){
+		if(arr[i]==arr[i+1]){
+			cout<<"Find duplicate";
+		}  
+	 }
 	return 0;
 }

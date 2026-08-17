@@ -109,6 +109,11 @@ int main(){
 	}
 	int maxSum=slidingWindow;
 	cout<<"first iteration "<<maxSum<<endl;;
-     
+    for(int i=k;i<n;i++){
+		slidingWindow+=arr[i];
+		slidingWindow-=arr[i-k];
+		maxSum=max(slidingWindow, maxSum);
+	}
+	cout<<maxSum;
 	return 0;
 }

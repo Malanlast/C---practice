@@ -89,13 +89,26 @@ int main(){
 	}**/
 
 	//Find Duplicate
-	int arr[]={1,9,2,5,4,2,3};//if short then this code work
+	/**int arr[]={1,9,2,5,4,2,3};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	sort(arr,arr+n); 
 	for(int i=0;i<n;i++){
 		if(arr[i]==arr[i+1]){
 			cout<<"Find duplicate";
 		}  
-	 }
+	 }**/
+
+	//sliding window
+	int arr[]={1,2,5,2,3,4,1};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int slidingWindow=0;
+	int k=3;
+	//first iteration
+	for(int i=0;i<k;i++){
+		slidingWindow+=arr[i];
+	}
+	int maxSum=slidingWindow;
+	cout<<"first iteration "<<maxSum<<endl;;
+     
 	return 0;
 }

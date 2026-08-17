@@ -99,7 +99,7 @@ int main(){
 	 }**/
 
 	//sliding window
-	int arr[]={1,2,5,2,3,4,1};
+	/**int arr[]={1,2,5,2,3,4,1};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int slidingWindow=0;
 	int k=3;
@@ -114,6 +114,8 @@ int main(){
 		slidingWindow-=arr[i-k];
 		maxSum=max(slidingWindow, maxSum);
 	}
-	cout<<maxSum;
+	cout<<maxSum;**/
+
+	//Kadane's Algorithm
 	return 0;
 }

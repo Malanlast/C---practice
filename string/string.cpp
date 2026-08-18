@@ -35,5 +35,8 @@ int main(){
 	}else{
 		cout<<"different"<<endl;
 	}
+	//find()
+	string str3="Shivam yadav";
+	cout<<str3.find('y')<<endl;
 	return 0;
 }

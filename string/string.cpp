@@ -19,6 +19,15 @@ int main(){
 		cout<<str[i];
 	}
 	cout<<endl;
+	//update character
+	str[5]='b';
+	cout<<str<<endl;
+	str.push_back('7');//push_back
+	cout<<str<<endl;
+	str.pop_back();//pop_back
+	cout<<str<<endl;
+	str.append(" 21");//append
+	cout<<str<<endl;
 	 
 	return 0;
 }

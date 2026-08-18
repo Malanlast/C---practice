@@ -41,6 +41,8 @@ int main(){
 	//substr()
 	cout<<str3.substr(0,6)<<endl;
 	//erase()
-	cout<<str3.erase(6,1);
+	cout<<str3.erase(6,1)<<endl;
+	//insert()
+    cout<<str3.insert(7,"Y")<<endl;
 	return 0;
 }

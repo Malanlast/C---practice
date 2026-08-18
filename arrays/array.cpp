@@ -118,7 +118,7 @@ int main(){
 	cout<<maxSum;**/
 
 	//Kadane's Algorithm
-	int arr[]={1, 2, -1, 1, -2, 2, 3, 4, -5, 6, 1, -5, 3};
+	/**int arr[]={1, 2, -1, 1, -2, 2, 3, 4, -5, 6, 1, -5, 3};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int currSum=0;
 	int maxSum=INT_MIN;
@@ -129,7 +129,19 @@ int main(){
 		}
 		maxSum=max(maxSum,currSum);
 	}
-	cout<<"max sub array sum is :"<<maxSum;
+	cout<<"max sub array sum is :"<<maxSum;**/
 
+	//Prefix sum
+	int arr[]={10,20,30,40};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int prefixSum[n];
+    prefixSum[0]=arr[0];
+    for(int i=1;i<n;i++){
+		prefixSum[i]=prefixSum[i-1]+arr[i];
+	}
+	cout<<"PrefixSum array is: "<<endl;
+	for(int i=0;i<n;i++){
+		cout<<prefixSum[i]<<" ";
+	}
 	return 0;
 }

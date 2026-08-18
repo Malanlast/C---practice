@@ -132,7 +132,7 @@ int main(){
 	cout<<"max sub array sum is :"<<maxSum;**/
 
 	//Prefix sum
-	int arr[]={10,20,30,40};
+	/**int arr[]={10,20,30,40};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int prefixSum[n];
     prefixSum[0]=arr[0];
@@ -142,6 +142,26 @@ int main(){
 	cout<<"PrefixSum array is: "<<endl;
 	for(int i=0;i<n;i++){
 		cout<<prefixSum[i]<<" ";
+	}**/
+
+	//Binary search on sorted array
+	int arr[]={10,20,30,40,50,55,60,65,70};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int target=55;
+	int start=0;
+	int end=n-1;
+	while(start<=end){
+		int mid=start+(end-start)/2;
+		if(arr[mid]==target){
+			cout<<"Find target is: "<<mid;
+			break;
+		}
+		else if(arr[mid]<target){
+			start=mid+1;
+		}
+		else{
+			end=mid-1;
+		}
 	}
 	return 0;
 }

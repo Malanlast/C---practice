@@ -28,6 +28,12 @@ int main(){
 	cout<<str<<endl;
 	str.append(" 21");//append
 	cout<<str<<endl;
-	 
+	string str2="shio";
+	cout<<str+" "+str2<<endl;
+	if(str==str2){//check ascii value character wise first match return true
+		cout<<"same"<<endl;
+	}else{
+		cout<<"different"<<endl;
+	}
 	return 0;
 }

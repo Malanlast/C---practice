@@ -44,5 +44,7 @@ int main(){
 	cout<<str3.erase(6,1)<<endl;
 	//insert()
     cout<<str3.insert(7,"Y")<<endl;
+	//replace()
+	cout<<str3.replace(6,6,"21")<<endl;
 	return 0;
 }

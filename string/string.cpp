@@ -38,5 +38,9 @@ int main(){
 	//find()
 	string str3="Shivam yadav";
 	cout<<str3.find('y')<<endl;
+	//substr()
+	cout<<str3.substr(0,6)<<endl;
+	//erase()
+	cout<<str3.erase(6,1);
 	return 0;
 }

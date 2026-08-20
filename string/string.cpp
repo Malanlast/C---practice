@@ -40,6 +40,8 @@ int main(){
 	cout<<str3.find('y')<<endl;
 	//substr()
 	cout<<str3.substr(0,6)<<endl;
+	
+	cout<<str3.substr(1,4)<<endl;
 	//erase()
 	cout<<str3.erase(6,1)<<endl;
 	//insert()

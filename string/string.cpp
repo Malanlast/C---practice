@@ -27,8 +27,9 @@ int main(){
 	str.pop_back();//pop_back
 	cout<<str<<endl;
 	str.append(" 21");//append
+	str.append(" @shio");
 	cout<<str<<endl;
-	string str2="shio";
+	string str2="Shio";
 	cout<<str+" "+str2<<endl;
 	if(str==str2){//check ascii value character wise first match return true
 		cout<<"same"<<endl;
@@ -40,7 +41,7 @@ int main(){
 	cout<<str3.find('y')<<endl;
 	//substr()
 	cout<<str3.substr(0,6)<<endl;
-	
+
 	cout<<str3.substr(1,4)<<endl;
 	//erase()
 	cout<<str3.erase(6,1)<<endl;

@@ -15,14 +15,14 @@ int main(){
 
 	//Access Characters
 
-	string str="Alia Bhatt";
+	/**string str="Alia Bhatt";
 	cout<<"Access element of characters";
 	for(int i=0;i<str.size();i++){
 		cout<<"Characters: "<<str[i];
 	}
-	cout<<endl;
+	cout<<endl;**/
 	//update character
-	str[5]='b';
+	/**str[5]='b';
 	cout<<str<<endl;
 	str.push_back('7');//push_back
 	cout<<str<<endl;
@@ -43,10 +43,10 @@ int main(){
 		cout<<str2+" greater";
 	}else{
 		cout<<str2+" lower";
-	}
+	}**/
 
 	//find()
-	string str3="Shivam yadav";
+	/**string str3="Shivam yadav";
 	cout<<str3.find('y')<<endl;
 	//substr()
 	cout<<str3.substr(0,6)<<endl;
@@ -57,6 +57,18 @@ int main(){
 	//insert()
     cout<<str3.insert(7,"Y")<<endl;
 	//replace()
-	cout<<str3.replace(6,6,"21")<<endl;
+	cout<<str3.replace(6,6,"21")<<endl;**/
+
+	//Problems
+	/**string str="Shio";
+	int left=0;
+	int right=str.size()-1;
+	while(left<right){
+		swap(str[left], str[right]);
+		left++;
+		right--;
+	}
+	cout<<str<<endl;**/
+	
 	return 0;
 }

@@ -14,9 +14,11 @@ int main(){
 	cout<<name.size();**/
 
 	//Access Characters
+
 	string str="Alia Bhatt";
+	cout<<"Access element of characters";
 	for(int i=0;i<str.size();i++){
-		cout<<str[i];
+		cout<<"Characters: "<<str[i];
 	}
 	cout<<endl;
 	//update character
@@ -36,6 +38,13 @@ int main(){
 	}else{
 		cout<<"different"<<endl;
 	}
+	
+	if(str<str2){
+		cout<<str2+" greater";
+	}else{
+		cout<<str2+" lower";
+	}
+
 	//find()
 	string str3="Shivam yadav";
 	cout<<str3.find('y')<<endl;

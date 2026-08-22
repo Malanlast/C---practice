@@ -1,6 +1,6 @@
 #include<iostream>
 #include<string>
-
+#include<cctype>
 using namespace std;
 int main(){
 	/**char c='A';
@@ -19,7 +19,7 @@ int main(){
 	/**string str="Alia Bhatt";
 	cout<<"Access element of characters";
 	for(int i=0;i<str.size();i++){
-		cout<<"Characters: "<<str[i];
+		cout<<"Characters: "<<ch;
 	}
 	cout<<endl;**/
 	//update character
@@ -75,18 +75,22 @@ int main(){
 
 	//count vowels or consonants
 
-	string str ="Alia";
+	string str ="Shio";
 
 	int vowel=0;
 	int consonant=0;
-	for(int i=0;i<str.size();i++){
-		if(str[i]=='a' || str[i]=='e'||
-		str[i]=='o' || str[i]=='i'
-		 || str[i]=='u'){
+	for(char ch : str){
+		ch=tolower(ch);
+		if(isalpha(ch)){
+		if(ch=='a' || ch=='e'||
+		ch=='o' || ch=='i'
+		 || ch=='u'){
 			vowel++;
-		}else{
+		}
+		else{
 		consonant++;
 		}
+	    }
 	}
 	cout<<"Vowel count: "<<vowel<<endl;
 	cout<<"Consonant count: "<<consonant<<endl;

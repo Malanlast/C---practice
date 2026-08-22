@@ -1,5 +1,6 @@
 #include<iostream>
 #include<string>
+
 using namespace std;
 int main(){
 	/**char c='A';
@@ -60,6 +61,8 @@ int main(){
 	cout<<str3.replace(6,6,"21")<<endl;**/
 
 	//Problems
+
+	//reverse String
 	/**string str="Shio";
 	int left=0;
 	int right=str.size()-1;
@@ -69,6 +72,24 @@ int main(){
 		right--;
 	}
 	cout<<str<<endl;**/
-	
+
+	//count vowels or consonants
+
+	string str ="Alia";
+
+	int vowel=0;
+	int consonant=0;
+	for(int i=0;i<str.size();i++){
+		if(str[i]=='a' || str[i]=='e'||
+		str[i]=='o' || str[i]=='i'
+		 || str[i]=='u'){
+			vowel++;
+		}else{
+		consonant++;
+		}
+	}
+	cout<<"Vowel count: "<<vowel<<endl;
+	cout<<"Consonant count: "<<consonant<<endl;
+
 	return 0;
 }

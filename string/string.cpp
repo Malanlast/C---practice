@@ -118,7 +118,16 @@ int main(){
 		} 
 	}**/
 
-	
-
+	//remove duplicate
+	string str ="shiiio";
+    string result="";
+	bool seen[26]={false};
+	for(int i=0;i<str.size();i++){
+		if(!seen[str[i] - 'a']){
+			result+=str[i];
+			seen[str[i]-'a']=true;
+		}
+	}
+	cout<<result;
 	return 0;
 }

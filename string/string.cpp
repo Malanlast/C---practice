@@ -201,14 +201,27 @@ int main(){
 	cout<<"Anagram";**/
 
 	//count words
-	
-	string str="my name is khan and i not a terrorist";
-	stringstream ss(str);
+	/**string str="my name is khan and i not a terrorist";
+	stringstream ss(str);//it's make string to stream.
 	int count=0;
 	string word;
 	while(ss>>word){//storing value in word from ss
 		count++;
 	}
-	cout<<count;
+	cout<<count;**/
+
+	//reverse words
+	string str="my name is khan and i not a terrorist";
+	stringstream ss(str);
+	string word; 
+    string words[100];
+	int count=0;
+	while(ss>>word){
+		words[count]=word;
+		count++;
+	}
+	for(int i=count-1;i>=0;i--){
+		cout<<words[i]<<" ";
+	}
 	return 0;
 }

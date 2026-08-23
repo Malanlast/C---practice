@@ -95,9 +95,8 @@ int main(){
 	cout<<"Consonant count: "<<consonant<<endl;**/
 
 	//count char frequency a-z
-	string str="alia bhatt";
+	/**string str="alia bhatt";
 	int freq[26]={0};
-
 	for(char ch : str){
 		freq[ch-'a']++;
 	}
@@ -105,7 +104,21 @@ int main(){
 		if(freq[i]>0){
 			cout<<char(i+'a')<<" count is: "<<freq[i]<<endl;
 		}
+	}**/
+
+	//find duplicate
+	/**string str="shoio";
+    int freq[26]={0};
+	for(char ch : str){
+		freq[ch - 'a']++;
 	}
+	for(int i=0;i<26;i++){
+		if(freq[i]>1){
+			cout<<char(i+'a')<<endl;
+		} 
+	}**/
+
+	
 
 	return 0;
 }

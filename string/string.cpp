@@ -211,7 +211,7 @@ int main(){
 	cout<<count;**/
 
 	//reverse words
-	string str="my name is khan and i not a terrorist";
+	/**string str="my name is khan and i not a terrorist";
 	stringstream ss(str);
 	string word; 
     string words[100];
@@ -222,6 +222,29 @@ int main(){
 	}
 	for(int i=count-1;i>=0;i--){
 		cout<<words[i]<<" ";
+	}**/
+
+	//reverse characters
+	string str="hello shio";
+	string word;
+	string words[100];
+	stringstream ss(str);
+	string str2;
+	int count=0;
+	while(ss>>word){ 
+		words[count]=word;
+		count++;
+	}
+	for(int i=count-1;i>=0;i--){
+		int r=words[i].size()-1; 
+		str2=words[i];
+		int l=0;
+		while(l<r){
+			swap(str2[l],str2[r]);
+			l++;
+			r--;
+		}
+		cout<<str2<<" ";
 	}
 	return 0;
 }

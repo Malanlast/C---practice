@@ -74,8 +74,7 @@ int main(){
 	cout<<str<<endl;**/
 
 	//count vowels or consonants
-
-	string str ="Shio";
+	/**string str ="Shio";
 
 	int vowel=0;
 	int consonant=0;
@@ -93,7 +92,20 @@ int main(){
 	    }
 	}
 	cout<<"Vowel count: "<<vowel<<endl;
-	cout<<"Consonant count: "<<consonant<<endl;
+	cout<<"Consonant count: "<<consonant<<endl;**/
+
+	//count char frequency a-z
+	string str="alia bhatt";
+	int freq[26]={0};
+
+	for(char ch : str){
+		freq[ch-'a']++;
+	}
+	for(int i=0;i<26;i++){
+		if(freq[i]>0){
+			cout<<char(i+'a')<<" count is: "<<freq[i]<<endl;
+		}
+	}
 
 	return 0;
 }

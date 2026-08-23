@@ -225,7 +225,7 @@ int main(){
 	}**/
 
 	//reverse characters
-	string str="hello shio";
+	/**string str="hello shio";
 	string word;
 	string words[100];
 	stringstream ss(str);
@@ -245,6 +245,26 @@ int main(){
 			r--;
 		}
 		cout<<str2<<" ";
+	}**/
+
+	//find longest or shortest word
+	string str="my name is khan not i am not a terrorist";
+	stringstream ss(str);
+	string word;
+	string words[100];
+	int count=0; 
+	while(ss>>word){
+		words[count]=word;
+		count++;
 	}
+	int longest=words[0].size();
+	string longestStr="";
+	for(int i=1;i<count;i++){
+		if(longest<words[i].size()){
+            longest=words[i].size();
+			longestStr=words[i];
+		}
+	}
+	cout<<"longest word is "<<longestStr<<": "<<longest;
 	return 0;
 }

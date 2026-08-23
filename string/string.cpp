@@ -1,6 +1,7 @@
 #include<iostream>
 #include<string>
 #include<cctype>
+#include<sstream>
 using namespace std;
 int main(){
 	/**char c='A';
@@ -181,7 +182,7 @@ int main(){
 	}**/
 
 	//check Anagrams another way
-	string str1="shiio"; 
+	/**string str1="shiio"; 
 	string str2="ioihs";  
 	if(str1.size()!=str2.size()){
 		cout<<"not Anagram";
@@ -197,6 +198,17 @@ int main(){
 		cout<<"not Anagram";
 		} 
 	}
-	cout<<"Anagram";
+	cout<<"Anagram";**/
+
+	//count words
+	
+	string str="my name is khan and i not a terrorist";
+	stringstream ss(str);
+	int count=0;
+	string word;
+	while(ss>>word){//storing value in word from ss
+		count++;
+	}
+	cout<<count;
 	return 0;
 }

@@ -37,3 +37,16 @@ int main(){
 	}
 	return 0;
 } **/
+
+//Binary Search
+#include<iostream>
+using namespace std;
+int main(){
+	int arr[]={1,5,7,8,15,18,73,89,90};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int left=0;
+	int right=n-1;
+	int mid=left+(right-left)/2;
+	cout<<mid;
+	return 0;
+}

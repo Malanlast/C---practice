@@ -46,7 +46,18 @@ int main(){
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int left=0;
 	int right=n-1;
-	int mid=left+(right-left)/2;
-	cout<<mid;
+	int target=8;
+	while(left<=right){
+		int mid=left+(right-left)/2;
+		if(arr[mid]==target){
+			cout<<"find at index: "<<mid;
+			break;
+		}
+		if(target<arr[mid]){
+			right=mid-1; 
+		}else{ 
+			left=mid+1;
+		}
+	}
 	return 0;
 }

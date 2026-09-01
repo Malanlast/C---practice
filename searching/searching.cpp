@@ -39,7 +39,7 @@ int main(){
 } **/
 
 //Binary Search
-#include<iostream>
+/**#include<iostream>
 using namespace std;
 int main(){
 	int arr[]={1,5,7,8,15,18,73,89,90};
@@ -60,4 +60,31 @@ int main(){
 		}
 	}
 	return 0;
+}**/
+#include <iostream>
+using namespace std;
+
+int binarySearch(int arr[], int n, int target) {
+
+    int left = 0;
+    int right = n - 1;
+
+    while(left <= right) {
+
+        int mid = left + (right - left) / 2;
+
+        if(arr[mid] == target) {
+            return mid;
+        }
+        else if(target > arr[mid]) {
+            left = mid + 1;
+        }
+        else {
+            right = mid - 1;
+        }
+    }
+
+    return -1;
 }
+
+ 

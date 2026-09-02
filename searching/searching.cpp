@@ -63,7 +63,7 @@ int main(){
 }**/
 
 //using function
-#include <iostream>
+/**#include <iostream>
 using namespace std;
 int binarySearch(int arr[], int n, int target) {
     int left = 0;
@@ -94,4 +94,42 @@ int main() {
         cout << "Not Found";
     }
     return 0;
+}**/
+
+#include <iostream>
+using namespace std;
+
+int firstOccurrence(int arr[], int n, int target) {
+
+    int left = 0;
+    int right = n - 1;
+
+    int answer = -1;
+
+    while (left <= right) {
+
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid] == target) {
+
+            answer = mid;
+
+            // Search LEFT for an earlier occurrence
+            right = mid - 1;
+        }
+        else if (arr[mid] < target) {
+
+            // Target is on the RIGHT
+            left = mid + 1;
+        }
+        else {
+
+            // Target is on the LEFT
+            right = mid - 1;
+        }
+    }
+
+    return answer;
 }
+
+ 

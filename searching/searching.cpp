@@ -98,7 +98,7 @@ int main() {
 
 
 //First Occurrence 
-#include <iostream>
+/**#include <iostream>
 using namespace std;
 int firstOccurrence(int arr[], int n, int target) {
     int left = 0;
@@ -129,6 +129,48 @@ int main() {
     int result = firstOccurrence(arr, n, target);
     if (result != -1) {
         cout << "First occurrence of "
+             << target
+             << " is at index: "
+             << result;
+    }
+    else {
+        cout << "Element not found";
+    }
+    return 0;
+}**/
+
+//last occurrence 
+#include <iostream>
+using namespace std;
+int lastOccurrence(int arr[], int n, int target) {
+    int left = 0;
+    int right = n - 1;
+    int answer = -1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) {
+            answer = mid;
+            // Search RIGHT for a later occurrence
+            left = mid + 1;
+        }
+        else if (arr[mid] < target) {
+            // Target is on the RIGHT
+            left = mid + 1;
+        }
+        else {
+            // Target is on the LEFT
+            right = mid - 1;
+        }
+    }
+    return answer;
+}
+int main() {
+    int arr[] = {1, 2, 3, 3, 4, 5, 6};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    int target = 3;
+    int result = lastOccurrence(arr, n, target);
+    if (result != -1) {
+        cout << "Last occurrence of "
              << target
              << " is at index: "
              << result;

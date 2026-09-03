@@ -229,5 +229,29 @@ int lastOccurrence(int arr[], int n, int target) {
 
     return answer;
 }
+int main() {
+
+    int arr[] = {1,2,3,3,3,4,5};
+
+    int n = sizeof(arr)/sizeof(arr[0]);
+
+    int target = 3;
+
+    int first = firstOccurrence(arr,n,target);
+    int last = lastOccurrence(arr,n,target);
+
+    if(first == -1) {
+        cout << "Element not found";
+    }
+    else {
+        int count = last - first + 1;
+
+        cout << "First Index = " << first << endl;
+        cout << "Last Index = " << last << endl;
+        cout << "Total Occurrences = " << count;
+    }
+
+    return 0;
+}
 
  

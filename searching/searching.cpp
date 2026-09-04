@@ -267,5 +267,28 @@ int lowerBound(int arr[], int n, int target) {
 
     return answer;
 }
+// Upper Bound
+// First index where arr[i] > target
+int upperBound(int arr[], int n, int target) {
+
+    int left = 0;
+    int right = n - 1;
+    int answer = n;
+
+    while (left <= right) {
+
+        int mid = left + (right - left) / 2;
+
+        if (arr[mid] > target) {
+            answer = mid;
+            right = mid - 1;
+        }
+        else {
+            left = mid + 1;
+        }
+    }
+
+    return answer;
+}
 
  

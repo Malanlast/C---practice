@@ -243,19 +243,14 @@ int main() {
 //total occurrence using lower bound or upper bound
 #include <iostream>
 using namespace std;
-
 // Lower Bound
 // First index where arr[i] >= target
 int lowerBound(int arr[], int n, int target) {
-
     int left = 0;
     int right = n - 1;
     int answer = n;
-
     while (left <= right) {
-
         int mid = left + (right - left) / 2;
-
         if (arr[mid] >= target) {
             answer = mid;
             right = mid - 1;
@@ -264,21 +259,16 @@ int lowerBound(int arr[], int n, int target) {
             left = mid + 1;
         }
     }
-
     return answer;
 }
 // Upper Bound
 // First index where arr[i] > target
 int upperBound(int arr[], int n, int target) {
-
     int left = 0;
     int right = n - 1;
     int answer = n;
-
     while (left <= right) {
-
         int mid = left + (right - left) / 2;
-
         if (arr[mid] > target) {
             answer = mid;
             right = mid - 1;
@@ -287,28 +277,19 @@ int upperBound(int arr[], int n, int target) {
             left = mid + 1;
         }
     }
-
     return answer;
 }
 int main() {
-
     int arr[] = {1, 2, 2, 2, 4, 5, 7};
-
     int n = sizeof(arr) / sizeof(arr[0]);
-
     int target = 2;
-
     int lower = lowerBound(arr, n, target);
     int upper = upperBound(arr, n, target);
-
     cout << "Lower Bound: " << lower << endl;
     cout << "Upper Bound: " << upper << endl;
-
     // Count occurrences
     int count = upper - lower;
-
     cout << "Total Occurrences: " << count << endl;
-
     return 0;
 }
 

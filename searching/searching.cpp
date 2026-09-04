@@ -290,5 +290,26 @@ int upperBound(int arr[], int n, int target) {
 
     return answer;
 }
+int main() {
+
+    int arr[] = {1, 2, 2, 2, 4, 5, 7};
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    int target = 2;
+
+    int lower = lowerBound(arr, n, target);
+    int upper = upperBound(arr, n, target);
+
+    cout << "Lower Bound: " << lower << endl;
+    cout << "Upper Bound: " << upper << endl;
+
+    // Count occurrences
+    int count = upper - lower;
+
+    cout << "Total Occurrences: " << count << endl;
+
+    return 0;
+}
 
  

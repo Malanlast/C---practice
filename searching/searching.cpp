@@ -241,7 +241,7 @@ int main() {
 }**/
 
 //total occurrence using lower bound or upper bound
-#include <iostream>
+/**#include <iostream>
 using namespace std;
 // Lower Bound
 // First index where arr[i] >= target
@@ -291,6 +291,6 @@ int main() {
     int count = upper - lower;
     cout << "Total Occurrences: " << count << endl;
     return 0;
-}
+}**/
 
  

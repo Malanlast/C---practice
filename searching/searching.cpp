@@ -293,4 +293,12 @@ int main() {
     return 0;
 }**/
 
+//searching print
+
+#include<iostream>
+using namespace std;
+int mail(){
+    cout<<"searching";
+}
+
  

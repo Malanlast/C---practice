@@ -4,7 +4,7 @@ using namespace std;
 void merge(int arr[],int left,int mid,int right){
 	int temp[100];
 	int i=left;
-	int j=mid;
+	int j=mid+1;
 	int k=left;
 
 	while(i<=mid && j<=right){
@@ -12,7 +12,7 @@ void merge(int arr[],int left,int mid,int right){
 			temp[k]=arr[i];
 			i++;
 		}else{
-			temp[k]=temp[j];
+			temp[k]=arr[j];
 			j++;
 		}
 		k++;
@@ -43,7 +43,7 @@ void mergeSort(int arr[],int left,int right){
 	merge(arr,left,mid,right);
 }
 int main(){
-	int arr[]={4,1,2,6,7};
+	int arr[]={4,1,3,5,2,6,7};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	mergeSort(arr,0,n-1);
 	cout<<"Sorted array: ";
@@ -52,3 +52,4 @@ int main(){
 	}
 	return 0;
 }
+//g++ mergeSort.cpp -o mergeSort; .\mergeSort.exe

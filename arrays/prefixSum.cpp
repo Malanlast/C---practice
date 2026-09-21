@@ -1,0 +1,1 @@
+//g++ prefixSum.cpp -o prefixSum; .\prefixSum.exe

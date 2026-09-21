@@ -1,0 +1,1 @@
+//g++ BinarySearch.cpp -o BinarySearch; .\BinarySearch.exe

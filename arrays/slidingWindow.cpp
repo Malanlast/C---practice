@@ -1,0 +1,1 @@
+//g++ slidingWindow.cpp -o slidingWindow; .\slidingWindow.exe

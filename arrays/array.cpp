@@ -162,6 +162,6 @@ int main(){
 		else{
 			end=mid-1;
 		}
-	}
+	}//g++ array.cpp -o array; .\array.exe
 	return 0;
 }

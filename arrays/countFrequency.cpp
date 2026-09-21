@@ -1,0 +1,1 @@
+//g++ countFrequency.cpp -o countFrequency; .\countFrequency.exe

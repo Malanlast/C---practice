@@ -1,0 +1,1 @@
+//g++ kadaneAlogo.cpp -o kadaneAlogo; .\kadaneAlogo.exe

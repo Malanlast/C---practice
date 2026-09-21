@@ -1,0 +1,1 @@
+//g++ maxElemOrMin.cpp -o maxElemOrMin; .\maxElemOrMin.exe

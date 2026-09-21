@@ -1,0 +1,1 @@
+//g++ findDuplicate.cpp -o findDuplicate; .\findDuplicate.exe

@@ -52,28 +52,28 @@ int main(){
 
 	/**int arr[]={10,20,30,40,5,500,60,70,80,90,100};
 	int maxElement=arr[0];
-	int minElement=arr[0];
-	int sum=0;
-	int countEven=0;
+	//int minElement=arr[0];
+	//int sum=0;
+	//int countEven=0;
 	int n=sizeof(arr)/sizeof(arr[0]);
-	for(int i=0;i<n;i++){
-		sum+=arr[i];
+	for(int i=1;i<n;i++){
+		//sum+=arr[i];
 		if(arr[i]>maxElement){
 			maxElement=arr[i];
-		}
-		if(arr[i]<minElement){
-			minElement=arr[i];
-		}
-		if(arr[i]%2==0){
-			countEven++;
-		}
+		}cout<<maxElement<<endl;
+		// if(arr[i]<minElement){
+		// 	minElement=arr[i];
+		// }
+		// if(arr[i]%2==0){
+		// 	countEven++;
+		// }
 	}
 	cout<<"Max Element is: "<<maxElement<<endl;
-	cout<<"Max Element is: "<<minElement<<endl;
-	cout<<"Sum Elements is: "<<sum<<endl;
-	cout<<"Avg of sum: "<<sum/n<<endl;
-	cout<<"Total Even elements is: "<<countEven<<endl;
-	cout<<"Total odd elements is: "<<n-countEven;**/
+	// cout<<"Max Element is: "<<minElement<<endl;
+	// cout<<"Sum Elements is: "<<sum<<endl;
+	//cout<<"Avg of sum: "<<sum/n<<endl;
+	//cout<<"Total Even elements is: "<<countEven<<endl;
+	//cout<<"Total odd elements is: "<<n-countEven;**/
 
 	//count frequency
 	/**int arr[]={10,50,42,7,52,23,54,5,5,5,23,10,50,42};
@@ -100,7 +100,7 @@ int main(){
 	 }**/
 
 	//sliding window
-	/**int arr[]={1,2,5,2,3,4,1};
+	/**int arr[]={1,2,5,6,3,4,1};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int slidingWindow=0;
 	int k=3;
@@ -116,9 +116,8 @@ int main(){
 		maxSum=max(slidingWindow, maxSum);
 	}
 	cout<<maxSum;**/
-
 	//Kadane's Algorithm
-	/**int arr[]={1, 2, -1, 1, -2, 2, 3, 4, -5, 6, 1, -5, 3};
+	int arr[]={1, 2, -1, 1, -2, 2, 3, 4, -5, 6, 1, -5, 3};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int currSum=0;
 	int maxSum=INT_MIN;
@@ -129,7 +128,7 @@ int main(){
 		}
 		maxSum=max(maxSum,currSum);
 	}
-	cout<<"max sub array sum is :"<<maxSum;**/
+	cout<<"max sub array sum is :"<<maxSum;
 
 	//Prefix sum
 	/**int arr[]={10,20,30,40};
@@ -145,7 +144,7 @@ int main(){
 	}**/
 
 	//Binary search on sorted array
-	int arr[]={10,20,30,40,50,55,60,65,70};
+	/**int arr[]={10,20,30,40,50,55,60,65,70};
 	int n=sizeof(arr)/sizeof(arr[0]);
 	int target=55;
 	int start=0;
@@ -162,6 +161,6 @@ int main(){
 		else{
 			end=mid-1;
 		}
-	}//g++ array.cpp -o array; .\array.exe
+	}**///g++ array.cpp -o array; .\array.exe
 	return 0;
 }

@@ -18,5 +18,12 @@ int main(){
 	third->data=45;
 	third->next=NULL;
 
+	//Print Linked List
+	Node* temp=first;
+	while(temp!=NULL){
+		cout<<temp->data<<" ";
+		temp=temp->next;
+	}
+
 	return 0;
 }//g++ linkedList.cpp -o linkedList;.\linkedList.exe 

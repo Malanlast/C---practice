@@ -31,6 +31,16 @@ int main(){
 	newNode->next=current->next;
 	current->next=newNode;
 
+	//add at last
+	Node* lastNode=new Node();
+	lastNode->data=21;
+	lastNode->next=NULL;
+	Node* tempo=first;
+	while(tempo->next!=NULL){
+		tempo=tempo->next;
+	}
+	tempo->next=lastNode;
+
 	//Print Linked List
 	Node* temp=first;
 	while(temp!=NULL){

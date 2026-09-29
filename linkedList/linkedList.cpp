@@ -18,6 +18,12 @@ int main(){
 	third->data=45;
 	third->next=NULL;
 
+	//insertion new node
+	Node* newNode=new Node();
+	newNode->data=3;
+	newNode->next=first;
+	first=newNode;
+
 	//Print Linked List
 	Node* temp=first;
 	while(temp!=NULL){

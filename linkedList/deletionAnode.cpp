@@ -19,6 +19,12 @@ int main(){
 	third->data=21;
 	third->next=NULL;
 
+    Node* current=first;
+	while(current->next->data!=11){
+		current=current->next;
+	}
+	current->next=current->next->next;
+	
 	cout<<"printing nodes: ";
 	Node* temp=first;
 	while(temp!=NULL){

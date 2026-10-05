@@ -1,5 +1,5 @@
 //g++ removeDuplicateNode.cpp -o removeDuplicateNode;.\removeDuplicateNode.exe
-//remove duplicate on sorted array
+//remove duplicate on sorted linked list
 #include<iostream>
 using namespace std;
 struct Node{

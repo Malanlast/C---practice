@@ -12,10 +12,30 @@ bool isPalindrome(Node* first){
 	while(fast!=NULL && fast->next!=NULL){
 		slow=slow->next;
 		fast=fast->next->next;
-	} 
+	}
+	//2. reverse right half linked list
+	Node* curr=slow;
+	Node* prev=NULL;
+	while(curr!=NULL){
+		Node* nextNode=curr->next;
+		curr->next=prev;
+		prev=curr;
+		curr=nextNode;
+	}
+	//3. compare left half or right half
+	Node* left=first;
+	Node* right=prev;
+	while(right!=NULL){
+		if(left->data!=right->data){
+			return false;
+		}
+		left=left->next;
+		right=right->next;
+	}
+	return true;
 }
 int main(){
-	int arr[]={1,2,3,3,2,1};
+	int arr[]={1,2,3,1,2,1};
 	Node* first=new Node{arr[0],NULL};
 	Node* temp=first;
 	int n=sizeof(arr)/sizeof(arr[0]); 

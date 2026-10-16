@@ -18,11 +18,11 @@ bool isMaxHeap(vector<int>&arr){
 	return true;
 }
 int main(){
-	vector<int>arr={50,60,20,10,20};
+	vector<int>arr={50,60,20,30,20};
 	if(isMaxHeap(arr)){
 		cout<<"valid heap";
 	}else{
-		cout<<"not valid head";
+		cout<<"not valid heap";
 	}
 	return 0;
 }

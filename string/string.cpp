@@ -20,7 +20,7 @@ int main(){
 	/**string str="Alia Bhatt";
 	cout<<"Access element of characters";
 	for(int i=0;i<str.size();i++){
-		cout<<"Characters: "<<ch;
+		cout<<"Characters: "<<str[i];
 	}
 	cout<<endl;**/
 	//update character
@@ -64,7 +64,7 @@ int main(){
 	//Problems
 
 	//reverse String
-	/**string str="Shio";
+	/*string str="Shio";
 	int left=0;
 	int right=str.size()-1;
 	while(left<right){
@@ -72,10 +72,10 @@ int main(){
 		left++;
 		right--;
 	}
-	cout<<str<<endl;**/
+	cout<<str<<endl;*/
 
 	//count vowels or consonants
-	/**string str ="Shio";
+	/*string str ="Shio";
 
 	int vowel=0;
 	int consonant=0;
@@ -248,32 +248,32 @@ int main(){
 	}**/
 
 	//find longest or shortest word
-	string str="my name is khan not in am not at terrorist";
-	stringstream ss(str);
-	string word;
-	string words[100];
-	int count=0; 
-	while(ss>>word){
-		words[count]=word;
-		count++;
-	}
-	int longest=words[0].size();
-	int shortest=words[0].size();
-	string longestStr="";
-	string shortestStr="";
-	longestStr=words[0];
-	shortestStr=words[0];
-	for(int i=1;i<count;i++){
-		if(longest<words[i].size()){
-            longest=words[i].size();
-			longestStr=words[i];
-		}
-		if(shortest>words[i].size()){
-            shortest=words[i].size();
-			shortestStr=words[i];
-		}
-	}
-	cout<<"longest word is- "<<longestStr<<": "<<longest<<endl;
-	cout<<"shortest word is- "<<shortestStr<<": "<<shortest;
+	// string str="my name is khan not in am not at terrorist";
+	// stringstream ss(str);
+	// string word;
+	// string words[100];
+	// int count=0; 
+	// while(ss>>word){
+	// 	words[count]=word;
+	// 	count++;
+	// }
+	// int longest=words[0].size();
+	// int shortest=words[0].size();
+	// string longestStr="";
+	// string shortestStr="";
+	// longestStr=words[0];
+	// shortestStr=words[0];
+	// for(int i=1;i<count;i++){
+	// 	if(longest<words[i].size()){
+    //         longest=words[i].size();
+	// 		longestStr=words[i];
+	// 	}
+	// 	if(shortest>words[i].size()){
+    //         shortest=words[i].size();
+	// 		shortestStr=words[i];
+	// 	}
+	// }
+	// cout<<"longest word is- "<<longestStr<<": "<<longest<<endl;
+	// cout<<"shortest word is- "<<shortestStr<<": "<<shortest;
 	return 0;
 }

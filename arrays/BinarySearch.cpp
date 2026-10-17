@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 	int arr[]={10,20,30,40,50,55,56,60,62,63};
 	int n=sizeof(arr)/sizeof(arr[0]);
-	int target=40;
+	int target=30;
 	int left=0;
 	int right=n-1;
 	while(left<=right){

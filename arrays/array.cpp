@@ -133,7 +133,7 @@ int main(){
 	//Prefix sum
 	/**int arr[]={10,20,30,40};
 	int n=sizeof(arr)/sizeof(arr[0]);
-	int prefixSum[n];
+	int prefixSum[4];
     prefixSum[0]=arr[0];
     for(int i=1;i<n;i++){
 		prefixSum[i]=prefixSum[i-1]+arr[i];

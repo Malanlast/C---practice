@@ -1,4 +1,4 @@
-//g++ checkSortedArray.cpp -o palindrome; .\palindrome.exe
+//g++ checkSortedArray.cpp -o checkSortedArray; .\checkSortedArray.exe
 #include<iostream>
 using namespace std;
 bool checkSortedArray(int arr[],int n){

@@ -1,4 +1,5 @@
 //g++ generateBinaryNum.cpp -o generateBinaryNum;.\generateBinaryNum.exe
+//number to binary
 #include<iostream>
 #include<queue>
 #include<string>

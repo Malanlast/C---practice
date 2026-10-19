@@ -13,18 +13,28 @@ int main(){
 	first->data=7;
 	first->next=second;
 
-	second->data=11;
+	second->data=81;
 	second->next=third;
 
 	third->data=21;
 	third->next=NULL;
-
+    
+	int target=7;
+	if(first->data==target){
+		Node* temp=first;
+		first=first->next;
+		delete temp;
+	}else{
     Node* current=first;
-	while(current->next->data!=11){
+	while(current->next!=NULL && current->next->data!=target){
 		current=current->next;
 	}
-	current->next=current->next->next;
-	
+	if(current->next!=NULL){
+		Node* temp=current->next;
+		current->next=current->next->next;
+		delete temp;
+	}
+    }
 	cout<<"printing nodes: ";
 	Node* temp=first;
 	while(temp!=NULL){

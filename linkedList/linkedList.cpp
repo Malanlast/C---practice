@@ -25,7 +25,7 @@ int main(){
 	first=newNodeStart;
 
 	//insertion new node after 1st node
-	Node* current=first->next;
+	Node* current=first;
 	Node* newNode=new Node();
 	newNode->data=3;
 	newNode->next=current->next;

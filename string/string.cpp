@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 	/**char c='A';
 	cout<<c<<endl;
-	string arr[]={"shio","alia"};
+	string arr[]={"shio","alhhhia"};
 	cout<<arr[0][2]<<" "<<arr[1]<<endl;
 	string str("Alia");//string str="Alia" both are same
 	cout<<str<<endl;
@@ -17,7 +17,7 @@ int main(){
 
 	//Access Characters
 
-	/**string str="Alia Bhatt";
+	/**string str="Alia Bhatt21";
 	cout<<"Access element of characters";
 	for(int i=0;i<str.size();i++){
 		cout<<"Characters: "<<str[i];
@@ -30,7 +30,7 @@ int main(){
 	cout<<str<<endl;
 	str.pop_back();//pop_back
 	cout<<str<<endl;
-	str.append(" 21");//append
+	str.append(" 21pot");//append
 	str.append(" @shio");
 	cout<<str<<endl;
 	string str2="Shio";

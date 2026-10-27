@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 int main(){
-string str="polop";
+string str="shio";
 	int left=0;
 	int right=str.size()-1;
 	bool palindrome =true;

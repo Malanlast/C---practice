@@ -2,7 +2,7 @@
 #include<string> 
 using namespace std;
 int main(){
-string str="alia bhatt";
+string str="alia bhatt srk";
 int freq[26]={0};
 for(char ch : str){
 	freq[ch-'a']++;

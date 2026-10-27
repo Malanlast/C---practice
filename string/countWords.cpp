@@ -3,7 +3,7 @@
 #include<sstream>
 using namespace std;
 int main(){
-string str="my name is khan and i not a terrorist";
+string str="my name is khan and i not a terrorist ?";
 	stringstream ss(str);//it's make string to stream.
 	int count=0;
 	string word;
